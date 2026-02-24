@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web & Django Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Web Development Quiz</h1>
+
+        <form id="quizForm">
+
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. Which HTML tag is used to create a hyperlink?</h3>
+                <label><input type="radio" name="q1" value="a"> &lt;link&gt;</label>
+                <label><input type="radio" name="q1" value="b"> &lt;a&gt;</label>
+                <label><input type="radio" name="q1" value="c"> &lt;href&gt;</label>
+                <label><input type="radio" name="q1" value="d"> &lt;hyper&gt;</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Which CSS property is used to change text color?</h3>
+                <label><input type="radio" name="q2" value="a"> font-color</label>
+                <label><input type="radio" name="q2" value="b"> text-color</label>
+                <label><input type="radio" name="q2" value="c"> color</label>
+                <label><input type="radio" name="q2" value="d"> background-color</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. What is the correct way to create a function in Python?</h3>
+                <label><input type="radio" name="q3" value="a"> function myFunc():</label>
+                <label><input type="radio" name="q3" value="b"> def myFunc():</label>
+                <label><input type="radio" name="q3" value="c"> create myFunc():</label>
+                <label><input type="radio" name="q3" value="d"> func myFunc():</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. What does OOP stand for?</h3>
+                <label><input type="radio" name="q4" value="a"> Object Oriented Programming</label>
+                <label><input type="radio" name="q4" value="b"> Object Organized Programming</label>
+                <label><input type="radio" name="q4" value="c"> Only Object Programming</label>
+                <label><input type="radio" name="q4" value="d"> Order Of Program</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. Which OOP concept allows one class to inherit another class?</h3>
+                <label><input type="radio" name="q5" value="a"> Polymorphism</label>
+                <label><input type="radio" name="q5" value="b"> Abstraction</label>
+                <label><input type="radio" name="q5" value="c"> Inheritance</label>
+                <label><input type="radio" name="q5" value="d"> Encapsulation</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>6. Which file is used to run Django project?</h3>
+                <label><input type="radio" name="q6" value="a"> app.py</label>
+                <label><input type="radio" name="q6" value="b"> main.py</label>
+                <label><input type="radio" name="q6" value="c"> manage.py</label>
+                <label><input type="radio" name="q6" value="d"> start.py</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>7. Which command is used to create a Django project?</h3>
+                <label><input type="radio" name="q7" value="a"> django startproject</label>
+                <label><input type="radio" name="q7" value="b"> python createproject</label>
+                <label><input type="radio" name="q7" value="c"> django-admin startproject</label>
+                <label><input type="radio" name="q7" value="d"> python django start</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>8. Which CSS property is used to make a container flexible?</h3>
+                <label><input type="radio" name="q8" value="a"> display: flex</label>
+                <label><input type="radio" name="q8" value="b"> position: flex</label>
+                <label><input type="radio" name="q8" value="c"> float: flex</label>
+                <label><input type="radio" name="q8" value="d"> align: flex</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>9. Which method is automatically called when object is created?</h3>
+                <label><input type="radio" name="q9" value="a"> __start__</label>
+                <label><input type="radio" name="q9" value="b"> __create__</label>
+                <label><input type="radio" name="q9" value="c"> __init__</label>
+                <label><input type="radio" name="q9" value="d"> __main__</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>10. In Django, which file is used to define database models?</h3>
+                <label><input type="radio" name="q10" value="a"> views.py</label>
+                <label><input type="radio" name="q10" value="b"> models.py</label>
+                <label><input type="radio" name="q10" value="c"> urls.py</label>
+                <label><input type="radio" name="q10" value="d"> forms.py</label>
+            </div>
+
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
